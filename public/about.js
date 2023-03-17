@@ -16,7 +16,7 @@ function displayPicture() {
   }
   
   function displayQuote(data) {
-    fetch('https://api.quotable.io/random')
+    fetch('https://api.quotable.io/random') //A service being called for a random quote
       .then((response) => response.json())
       .then((data) => {
         const containerEl = document.querySelector('#quote');
