@@ -11,6 +11,8 @@ if (!userName) {
 const url = `mongodb+srv://${userName}:${password}@${hostname}`;
 
 const client = new MongoClient(url);
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
 const scoreCollection = client.db('simon').collection('score');
 
 function addScore(score) {
@@ -28,3 +30,5 @@ function getHighScores() {
 }
 
 module.exports = { addScore, getHighScores };
+client.close();
+});
