@@ -2,7 +2,7 @@ async function loadScores() {
   let scores = [];
   try {
     // Get the latest high scores from the service
-    const response = await fetch('/api/scores');                             //What exactly is this calling?
+    const response = await fetch('/api/scores');                           //What exactly is this calling?
     scores = await response.json();                                         //How does it know to add those into the scores array?
 
     // Save the scores in case we go offline in the future
