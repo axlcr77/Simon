@@ -2,7 +2,7 @@ import React from 'react';
 
 import { NavLink, Route, Routes } from 'react-router-dom';
 import { Login } from './login/login';
-import { Play } from './play/play';
+import { Play } from './Play/play';
 import { Scores } from './scores/scores';
 import { About } from './About/about';
 import { AuthState } from './login/authState';
